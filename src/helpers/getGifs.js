@@ -1,8 +1,4 @@
 
-
-
-
-
 export const getGifs = async(category) => {
 
     const url = `https://api.giphy.com/v1/gifs/search?api_key=g1UZZgcgJ7WEN6DMyccoQTYj3qeWV6aH&q=onepiece${category}&limit=10`;
@@ -15,7 +11,6 @@ export const getGifs = async(category) => {
         url: img.images.downsized_medium.url
     }))
 
-    console.log(gifs)
     return gifs;
 }
 
